@@ -1,0 +1,5 @@
+hello bacho
+
+when a command is executes-->the shell creates a new process using a system call like fork()
+then it loads the command using exec() and the cpu executes it
+once execution is completed , the output is returned to shell
