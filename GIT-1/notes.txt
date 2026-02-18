@@ -1,0 +1,2 @@
+git fetch download changes from remote but does not merge
+git merge- it fetch and merge auto into current branch
