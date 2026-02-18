@@ -1,2 +1,5 @@
 git fetch download changes from remote but does not merge
 git merge- it fetch and merge auto into current branch
+
+when a git commit is made, git takes a snapshot of the staged changes, create a unique commit hash
+and stores metadata like author and timestamp and the head pointer is moved to the new commit,
