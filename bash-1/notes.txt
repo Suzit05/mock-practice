@@ -1,1 +1,6 @@
 hello beta
+
+
+#!/bin/bash --> shebang  
+
+if command -v docker &> /dev/null
