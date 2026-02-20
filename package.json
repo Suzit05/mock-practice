@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo \"Build step not required\"",
+
+    "test": "echo \"no test yet\" && exit 0"
   },
   "repository": {
     "type": "git",
