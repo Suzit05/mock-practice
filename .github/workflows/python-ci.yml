@@ -1,0 +1,35 @@
+name: "Python ci pipeline"
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout the code #clone the repo
+              uses: actions/checkout@v3
+
+            - name: Install python  #install python
+              uses: actions/setup-python@v4
+              with:
+                python-version: "3.0"
+
+            - name: Install Dependencies #install dependencies
+              run : |
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt
+
+            - name: Run lint  #rum lint to check bugs,error and mistakes
+              run:  |
+                flake8 app.py
+
+            - name: Run test  #run test finally
+              run:  |
+                pytest
