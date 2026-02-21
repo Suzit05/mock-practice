@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+ansible-venv/
+venv/
+env/
+
+# --- Distribution / Build ---
+dist/
+build/
+*.egg-info/
+
+# --- Docker ---
+# We usually keep the Dockerfile, but ignore local exported images
+*.tar
+*.tar.gz
+
+# --- Node (from your previous list) ---
+node_modules/
+# Only ignore these if you aren't tracking your package manifest
+# package.json
+# package-lock.json
+
+# --- OS / IDE ---
+.vscode/
+.idea/
+.DS_Store
+# WSL/Windows specific
+Thumbs.db
+ehthumbs.db
+
+
+
+# --- Secrets & Environment Variables ---
+.env
+*.pem
+*.key
